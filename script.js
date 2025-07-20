@@ -90,7 +90,7 @@ function initializeAnimations() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.feature-card, .server-card, .timeline-item, .progress-card, .category-card, .config-card, .advantage');
+    const animateElements = document.querySelectorAll('.feature-card, .server-card, .timeline-item, .progress-card, .category-card, .config-card, .advantage, .contact-method, .contact-card');
     animateElements.forEach(el => {
         observer.observe(el);
     });
