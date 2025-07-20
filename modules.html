@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Modules - Ternic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">Ternic</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="server.html" class="nav-link">Server</a></li>
+                <li><a href="modules.html" class="nav-link active">Server Modules</a></li>
+                <li><a href="cpu-progress.html" class="nav-link">CPU Progress</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Server Modules</h1>
+                <p class="page-description">Modular components for flexible, scalable server configurations</p>
+            </div>
+        </section>
+
+        <!-- Modular Philosophy -->
+        <section class="modular-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Modular by Design</h2>
+                        <p>
+                            Ternic's modular architecture allows you to build exactly the server configuration you need. 
+                            Mix and match components to optimize for your specific workload requirements, 
+                            and upgrade individual modules as your needs evolve.
+                        </p>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Flexible Configuration</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>Easy Upgrades</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Cost Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-visual">
+                        <div class="module-assembly">
+                            <div class="module-slot">
+                                <div class="module cpu-module">CPU</div>
+                            </div>
+                            <div class="module-slot">
+                                <div class="module memory-module">RAM</div>
+                            </div>
+                            <div class="module-slot">
+                                <div class="module storage-module">SSD</div>
+                            </div>
+                            <div class="module-slot">
+                                <div class="module network-module">NET</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Module Categories -->
+        <section class="module-categories">
+            <div class="container">
+                <h2 class="section-title">Module Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Processor Modules</h3>
+                        <p>High-performance RISC-V processor modules with varying core counts and frequencies</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-CPU-4C</span>
+                                <span class="module-desc">Quad-core 3.2GHz</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-CPU-8C</span>
+                                <span class="module-desc">Octa-core 3.0GHz</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-CPU-16C</span>
+                                <span class="module-desc">16-core 2.8GHz</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-CPU-32C</span>
+                                <span class="module-desc">32-core 2.5GHz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>Memory Modules</h3>
+                        <p>DDR5 memory modules optimized for RISC-V architecture with ECC support</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-MEM-16GB</span>
+                                <span class="module-desc">16GB DDR5-4800 ECC</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-MEM-32GB</span>
+                                <span class="module-desc">32GB DDR5-4800 ECC</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-MEM-64GB</span>
+                                <span class="module-desc">64GB DDR5-5200 ECC</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-MEM-128GB</span>
+                                <span class="module-desc">128GB DDR5-5200 ECC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <h3>Storage Modules</h3>
+                        <p>High-speed NVMe storage modules with enterprise-grade reliability</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-SSD-1TB</span>
+                                <span class="module-desc">1TB NVMe PCIe 5.0</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-SSD-2TB</span>
+                                <span class="module-desc">2TB NVMe PCIe 5.0</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-SSD-4TB</span>
+                                <span class="module-desc">4TB NVMe PCIe 5.0</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-SSD-8TB</span>
+                                <span class="module-desc">8TB NVMe PCIe 5.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Modules</h3>
+                        <p>Advanced networking modules supporting various speeds and protocols</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-NET-1G</span>
+                                <span class="module-desc">4x 1GbE Ports</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-NET-10G</span>
+                                <span class="module-desc">2x 10GbE Ports</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-NET-25G</span>
+                                <span class="module-desc">4x 25GbE Ports</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-NET-100G</span>
+                                <span class="module-desc">2x 100GbE Ports</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Power Modules</h3>
+                        <p>Efficient power supply modules with redundancy and hot-swap capabilities</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-PSU-500W</span>
+                                <span class="module-desc">500W 80+ Titanium</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-PSU-750W</span>
+                                <span class="module-desc">750W 80+ Titanium</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-PSU-1200W</span>
+                                <span class="module-desc">1200W 80+ Titanium</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-PSU-1600W</span>
+                                <span class="module-desc">1600W 80+ Titanium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3>Cooling Modules</h3>
+                        <p>Advanced thermal management modules for optimal performance and efficiency</p>
+                        <div class="module-list">
+                            <div class="module-item">
+                                <span class="module-name">TRN-COOL-AIR</span>
+                                <span class="module-desc">High-efficiency air cooling</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-COOL-LIQ</span>
+                                <span class="module-desc">Liquid cooling system</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-COOL-HYB</span>
+                                <span class="module-desc">Hybrid air/liquid cooling</span>
+                            </div>
+                            <div class="module-item">
+                                <span class="module-name">TRN-COOL-IMM</span>
+                                <span class="module-desc">Immersion cooling ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Configuration Builder -->
+        <section class="config-builder">
+            <div class="container">
+                <h2 class="section-title">Configuration Examples</h2>
+                <div class="config-examples">
+                    <div class="config-card">
+                        <h3>Edge Computing Configuration</h3>
+                        <div class="config-specs">
+                            <div class="config-spec">
+                                <i class="fas fa-microchip"></i>
+                                <span>TRN-CPU-4C (Quad-core 3.2GHz)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-memory"></i>
+                                <span>2x TRN-MEM-16GB (32GB Total)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-hdd"></i>
+                                <span>1x TRN-SSD-1TB</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-network-wired"></i>
+                                <span>1x TRN-NET-1G</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-bolt"></i>
+                                <span>1x TRN-PSU-500W</span>
+                            </div>
+                        </div>
+                        <div class="config-use-case">
+                            <strong>Ideal for:</strong> Edge deployments, IoT gateways, small branch offices
+                        </div>
+                    </div>
+
+                    <div class="config-card">
+                        <h3>Data Center Configuration</h3>
+                        <div class="config-specs">
+                            <div class="config-spec">
+                                <i class="fas fa-microchip"></i>
+                                <span>2x TRN-CPU-16C (32 cores total)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-memory"></i>
+                                <span>8x TRN-MEM-32GB (256GB Total)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-hdd"></i>
+                                <span>4x TRN-SSD-2TB</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-network-wired"></i>
+                                <span>2x TRN-NET-25G</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-bolt"></i>
+                                <span>2x TRN-PSU-750W (Redundant)</span>
+                            </div>
+                        </div>
+                        <div class="config-use-case">
+                            <strong>Ideal for:</strong> Virtualization, databases, web services
+                        </div>
+                    </div>
+
+                    <div class="config-card">
+                        <h3>High-Performance Configuration</h3>
+                        <div class="config-specs">
+                            <div class="config-spec">
+                                <i class="fas fa-microchip"></i>
+                                <span>4x TRN-CPU-32C (128 cores total)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-memory"></i>
+                                <span>16x TRN-MEM-64GB (1TB Total)</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-hdd"></i>
+                                <span>8x TRN-SSD-4TB</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-network-wired"></i>
+                                <span>4x TRN-NET-100G</span>
+                            </div>
+                            <div class="config-spec">
+                                <i class="fas fa-bolt"></i>
+                                <span>2x TRN-PSU-1600W (Redundant)</span>
+                            </div>
+                        </div>
+                        <div class="config-use-case">
+                            <strong>Ideal for:</strong> HPC workloads, AI/ML training, large-scale analytics
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Module Advantages -->
+        <section class="module-advantages">
+            <div class="container">
+                <h2 class="section-title">Modular Advantages</h2>
+                <div class="advantages-grid">
+                    <div class="advantage">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Hot-Swappable</h3>
+                        <p>Replace or upgrade modules without downtime, ensuring continuous operation of your critical systems.</p>
+                    </div>
+                    <div class="advantage">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Scalable Performance</h3>
+                        <p>Add more processing power, memory, or storage as your workload demands grow.</p>
+                    </div>
+                    <div class="advantage">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Redundancy</h3>
+                        <p>Build in redundancy for critical components to ensure high availability and fault tolerance.</p>
+                    </div>
+                    <div class="advantage">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Easy Maintenance</h3>
+                        <p>Simplified troubleshooting and replacement with clearly defined module boundaries.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ternic</h3>
+                    <p>Next-generation RISC-V computing solutions for enterprise environments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="server.html">Servers</a></li>
+                        <li><a href="modules.html">Server Modules</a></li>
+                        <li><a href="cpu-progress.html">CPU Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ternic.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ternic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

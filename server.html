@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Solutions - Ternic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">Ternic</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="server.html" class="nav-link active">Server</a></li>
+                <li><a href="modules.html" class="nav-link">Server Modules</a></li>
+                <li><a href="cpu-progress.html" class="nav-link">CPU Progress</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Server Solutions</h1>
+                <p class="page-description">Enterprise-grade servers powered by our custom RISC-V processors</p>
+            </div>
+        </section>
+
+        <!-- Server Lineup -->
+        <section class="server-lineup">
+            <div class="container">
+                <h2 class="section-title">Our Server Portfolio</h2>
+                <div class="servers-grid">
+                    <div class="server-card">
+                        <div class="server-image">
+                            <div class="server-visual">
+                                <div class="rack-unit">
+                                    <div class="led-indicators">
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led"></span>
+                                    </div>
+                                    <div class="ports">
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-info">
+                            <h3>Ternic Edge Series</h3>
+                            <p class="server-category">1U Rack Server</p>
+                            <p>Compact, energy-efficient server perfect for edge computing and small-scale deployments.</p>
+                            <ul class="server-specs">
+                                <li>Custom RISC-V Quad-Core CPU</li>
+                                <li>32GB DDR5 RAM (expandable to 128GB)</li>
+                                <li>2x NVMe SSD slots</li>
+                                <li>4x Gigabit Ethernet ports</li>
+                                <li>Low power consumption: 85W TDP</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="server-card">
+                        <div class="server-image">
+                            <div class="server-visual">
+                                <div class="rack-unit large">
+                                    <div class="led-indicators">
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                    </div>
+                                    <div class="ports">
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-info">
+                            <h3>Ternic Performance Series</h3>
+                            <p class="server-category">2U Rack Server</p>
+                            <p>High-performance server designed for demanding workloads and data center environments.</p>
+                            <ul class="server-specs">
+                                <li>Dual RISC-V 16-Core CPUs</li>
+                                <li>256GB DDR5 RAM (expandable to 1TB)</li>
+                                <li>8x NVMe SSD slots</li>
+                                <li>4x 25GbE + 2x 100GbE ports</li>
+                                <li>Advanced cooling system</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="server-card">
+                        <div class="server-image">
+                            <div class="server-visual">
+                                <div class="rack-unit xl">
+                                    <div class="led-indicators">
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                        <span class="led active"></span>
+                                    </div>
+                                    <div class="ports">
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                        <div class="port"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-info">
+                            <h3>Ternic Enterprise Series</h3>
+                            <p class="server-category">4U Rack Server</p>
+                            <p>Maximum performance server for the most demanding enterprise and HPC workloads.</p>
+                            <ul class="server-specs">
+                                <li>Quad RISC-V 32-Core CPUs</li>
+                                <li>1TB DDR5 RAM (expandable to 4TB)</li>
+                                <li>16x NVMe SSD slots</li>
+                                <li>8x 100GbE ports</li>
+                                <li>Redundant power supplies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Server Features -->
+        <section class="server-features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Ternic Servers</h2>
+                <div class="features-comparison">
+                    <div class="feature-column">
+                        <div class="feature-header">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Performance</h3>
+                        </div>
+                        <ul>
+                            <li>Custom RISC-V architecture optimized for enterprise workloads</li>
+                            <li>Advanced branch prediction and out-of-order execution</li>
+                            <li>Hardware-accelerated cryptography and compression</li>
+                            <li>Low-latency memory subsystem</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="feature-header">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Efficiency</h3>
+                        </div>
+                        <ul>
+                            <li>Industry-leading performance per watt</li>
+                            <li>Dynamic frequency scaling</li>
+                            <li>Intelligent thermal management</li>
+                            <li>Reduced cooling requirements</li>
+                        </ul>
+                    </div>
+                    <div class="feature-column">
+                        <div class="feature-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Security</h3>
+                        </div>
+                        <ul>
+                            <li>Hardware root of trust</li>
+                            <li>Secure boot and attestation</li>
+                            <li>Memory protection and isolation</li>
+                            <li>Built-in encryption engines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section class="tech-specs">
+            <div class="container">
+                <h2 class="section-title">Technical Overview</h2>
+                <div class="specs-grid">
+                    <div class="spec-category">
+                        <h3>Processor Architecture</h3>
+                        <div class="spec-items">
+                            <div class="spec-item">
+                                <span class="spec-label">Instruction Set</span>
+                                <span class="spec-value">RISC-V RV64GC</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Manufacturing Process</span>
+                                <span class="spec-value">7nm FinFET</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cache Hierarchy</span>
+                                <span class="spec-value">L1: 64KB I/D, L2: 1MB, L3: 32MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-category">
+                        <h3>Memory & Storage</h3>
+                        <div class="spec-items">
+                            <div class="spec-item">
+                                <span class="spec-label">Memory Type</span>
+                                <span class="spec-value">DDR5-4800</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Memory Channels</span>
+                                <span class="spec-value">8-channel (Enterprise)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Storage Interface</span>
+                                <span class="spec-value">PCIe 5.0 NVMe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec-category">
+                        <h3>Connectivity</h3>
+                        <div class="spec-items">
+                            <div class="spec-item">
+                                <span class="spec-label">Network Interfaces</span>
+                                <span class="spec-value">1GbE to 100GbE</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">PCIe Lanes</span>
+                                <span class="spec-value">Up to 128 lanes PCIe 5.0</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Management</span>
+                                <span class="spec-value">IPMI 2.0, Redfish</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ternic</h3>
+                    <p>Next-generation RISC-V computing solutions for enterprise environments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="server.html">Servers</a></li>
+                        <li><a href="modules.html">Server Modules</a></li>
+                        <li><a href="cpu-progress.html">CPU Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ternic.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ternic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

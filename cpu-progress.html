@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Development Progress - Ternic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">Ternic</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="server.html" class="nav-link">Server</a></li>
+                <li><a href="modules.html" class="nav-link">Server Modules</a></li>
+                <li><a href="cpu-progress.html" class="nav-link active">CPU Progress</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">RISC-V CPU Development</h1>
+                <p class="page-description">Track our journey in developing next-generation RISC-V processors</p>
+            </div>
+        </section>
+
+        <!-- Development Timeline -->
+        <section class="development-timeline">
+            <div class="container">
+                <h2 class="section-title">Development Roadmap</h2>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q2 2023</div>
+                            <h3>Architecture Design</h3>
+                            <p>Completed initial RISC-V processor architecture design with custom extensions for enterprise workloads.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">ISA Definition Complete</span>
+                                <span class="achievement">Microarchitecture Specification</span>
+                                <span class="achievement">Performance Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q4 2023</div>
+                            <h3>RTL Implementation</h3>
+                            <p>Completed RTL design and verification of the core processor units including ALU, FPU, and cache controllers.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">Core RTL Complete</span>
+                                <span class="achievement">Cache Hierarchy</span>
+                                <span class="achievement">Memory Controller</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q2 2024</div>
+                            <h3>FPGA Prototype</h3>
+                            <p>Successfully implemented and tested processor design on FPGA platforms, validating functionality and performance.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">FPGA Implementation</span>
+                                <span class="achievement">Linux Boot Success</span>
+                                <span class="achievement">Benchmark Validation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item current">
+                        <div class="timeline-marker">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q4 2024</div>
+                            <h3>Silicon Tapeout</h3>
+                            <p>Currently in the final stages of silicon design and preparing for first tapeout using 7nm manufacturing process.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">Physical Design 95%</span>
+                                <span class="achievement">DRC/LVS Verification</span>
+                                <span class="achievement">Timing Closure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q2 2025</div>
+                            <h3>Silicon Validation</h3>
+                            <p>Receive first silicon samples and conduct comprehensive validation and characterization testing.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">Silicon Samples</span>
+                                <span class="achievement">Functional Testing</span>
+                                <span class="achievement">Performance Validation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Q4 2025</div>
+                            <h3>Production Release</h3>
+                            <p>Begin mass production and integration into Ternic server products for customer delivery.</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement">Mass Production</span>
+                                <span class="achievement">Server Integration</span>
+                                <span class="achievement">Customer Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Progress -->
+        <section class="technical-progress">
+            <div class="container">
+                <h2 class="section-title">Technical Milestones</h2>
+                <div class="progress-grid">
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>Core Architecture</h3>
+                            <span class="progress-percentage">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>64-bit RISC-V ISA implementation</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Custom extensions for enterprise features</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Out-of-order execution pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>Memory Subsystem</h3>
+                            <span class="progress-percentage">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multi-level cache hierarchy</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>DDR5 memory controller</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Advanced prefetching algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>I/O and Interconnect</h3>
+                            <span class="progress-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>PCIe 5.0 controller</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>High-speed network interfaces</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-spinner"></i>
+                                <span>Interconnect fabric optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>Security Features</h3>
+                            <span class="progress-percentage">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hardware root of trust</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Memory protection units</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-spinner"></i>
+                                <span>Cryptographic accelerators</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>Physical Design</h3>
+                            <span class="progress-percentage">95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>7nm process optimization</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Power delivery network</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-spinner"></i>
+                                <span>Final timing closure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-header">
+                            <h3>Software Stack</h3>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <div class="progress-details">
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Linux kernel support</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Compiler optimizations</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-spinner"></i>
+                                <span>Performance tuning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Benchmarks -->
+        <section class="performance-benchmarks">
+            <div class="container">
+                <h2 class="section-title">Performance Projections</h2>
+                <div class="benchmarks-grid">
+                    <div class="benchmark-card">
+                        <h3>Single-Core Performance</h3>
+                        <div class="benchmark-chart">
+                            <div class="chart-bar">
+                                <div class="bar-label">Ternic RISC-V</div>
+                                <div class="bar-container">
+                                    <div class="bar ternic" style="width: 95%;"></div>
+                                    <span class="bar-value">2,850 pts</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">Intel Xeon</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 85%;"></div>
+                                    <span class="bar-value">2,550 pts</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">AMD EPYC</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 90%;"></div>
+                                    <span class="bar-value">2,700 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="benchmark-note">SPEC CPU2017 Integer benchmark scores (projected)</p>
+                    </div>
+
+                    <div class="benchmark-card">
+                        <h3>Power Efficiency</h3>
+                        <div class="benchmark-chart">
+                            <div class="chart-bar">
+                                <div class="bar-label">Ternic RISC-V</div>
+                                <div class="bar-container">
+                                    <div class="bar ternic" style="width: 100%;"></div>
+                                    <span class="bar-value">125 pts/W</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">Intel Xeon</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 70%;"></div>
+                                    <span class="bar-value">88 pts/W</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">AMD EPYC</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 80%;"></div>
+                                    <span class="bar-value">100 pts/W</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="benchmark-note">Performance per watt comparison (projected)</p>
+                    </div>
+
+                    <div class="benchmark-card">
+                        <h3>Memory Bandwidth</h3>
+                        <div class="benchmark-chart">
+                            <div class="chart-bar">
+                                <div class="bar-label">Ternic RISC-V</div>
+                                <div class="bar-container">
+                                    <div class="bar ternic" style="width: 95%;"></div>
+                                    <span class="bar-value">450 GB/s</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">Intel Xeon</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 80%;"></div>
+                                    <span class="bar-value">380 GB/s</span>
+                                </div>
+                            </div>
+                            <div class="chart-bar">
+                                <div class="bar-label">AMD EPYC</div>
+                                <div class="bar-container">
+                                    <div class="bar competitor" style="width: 85%;"></div>
+                                    <span class="bar-value">400 GB/s</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="benchmark-note">Peak memory bandwidth (projected)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Team -->
+        <section class="development-team">
+            <div class="container">
+                <h2 class="section-title">Our Development Team</h2>
+                <div class="team-stats">
+                    <div class="team-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">52</span>
+                            <span class="stat-label">Engineers</span>
+                        </div>
+                    </div>
+                    <div class="team-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">28</span>
+                            <span class="stat-label">PhDs</span>
+                        </div>
+                    </div>
+                    <div class="team-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Years Combined Experience</span>
+                        </div>
+                    </div>
+                    <div class="team-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">45</span>
+                            <span class="stat-label">Patents Filed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-expertise">
+                    <h3>Areas of Expertise</h3>
+                    <div class="expertise-tags">
+                        <span class="expertise-tag">Processor Architecture</span>
+                        <span class="expertise-tag">RISC-V ISA</span>
+                        <span class="expertise-tag">VLSI Design</span>
+                        <span class="expertise-tag">Memory Systems</span>
+                        <span class="expertise-tag">Cache Design</span>
+                        <span class="expertise-tag">Physical Design</span>
+                        <span class="expertise-tag">Verification</span>
+                        <span class="expertise-tag">Performance Modeling</span>
+                        <span class="expertise-tag">Security Architecture</span>
+                        <span class="expertise-tag">Compiler Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ternic</h3>
+                    <p>Next-generation RISC-V computing solutions for enterprise environments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="server.html">Servers</a></li>
+                        <li><a href="modules.html">Server Modules</a></li>
+                        <li><a href="cpu-progress.html">CPU Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ternic.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ternic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

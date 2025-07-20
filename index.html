@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternic - RISC-V CPU & Server Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">Ternic</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="server.html" class="nav-link">Server</a></li>
+                <li><a href="modules.html" class="nav-link">Server Modules</a></li>
+                <li><a href="cpu-progress.html" class="nav-link">CPU Progress</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Next-Generation RISC-V Computing Solutions</h1>
+                    <p class="hero-description">
+                        Ternic develops cutting-edge server hardware and RISC-V processors, 
+                        delivering scalable, efficient, and innovative computing solutions for the future.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="server.html" class="btn btn-primary">Explore Servers</a>
+                        <a href="cpu-progress.html" class="btn btn-secondary">CPU Development</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="circuit-pattern">
+                        <svg viewBox="0 0 400 300" class="circuit-svg">
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <g stroke="url(#gradient1)" stroke-width="2" fill="none">
+                                <path d="M50 50 L150 50 L150 100 L250 100 L250 150" />
+                                <path d="M100 150 L200 150 L200 200 L300 200" />
+                                <path d="M50 200 L100 200 L100 250 L200 250" />
+                                <circle cx="150" cy="50" r="5" fill="#6366f1" />
+                                <circle cx="150" cy="100" r="5" fill="#8b5cf6" />
+                                <circle cx="250" cy="150" r="5" fill="#6366f1" />
+                                <circle cx="200" cy="200" r="5" fill="#8b5cf6" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Our Core Technologies</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>RISC-V Processors</h3>
+                        <p>Custom-designed RISC-V CPUs optimized for performance, efficiency, and scalability in enterprise environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Enterprise Servers</h3>
+                        <p>High-performance server solutions built around our proprietary RISC-V architecture for maximum efficiency.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Modular Design</h3>
+                        <p>Flexible, modular components that allow for custom configurations to meet specific enterprise requirements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Scalable Solutions</h3>
+                        <p>Built for growth, our solutions scale seamlessly from single-node deployments to massive data centers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Ternic</h2>
+                        <p>
+                            Ternic is at the forefront of RISC-V processor development and server innovation. 
+                            We design and manufacture our own CPU architecture based on the open RISC-V instruction set, 
+                            creating servers that deliver exceptional performance while maintaining energy efficiency.
+                        </p>
+                        <p>
+                            Our team of engineers combines deep expertise in processor design, server architecture, 
+                            and enterprise computing to create solutions that meet the demanding requirements of 
+                            modern data centers and cloud computing environments.
+                        </p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Engineers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Years R&D</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Patents Filed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="tech-stack">
+                            <div class="tech-item">
+                                <span>RISC-V ISA</span>
+                            </div>
+                            <div class="tech-item">
+                                <span>Custom Silicon</span>
+                            </div>
+                            <div class="tech-item">
+                                <span>Enterprise Hardware</span>
+                            </div>
+                            <div class="tech-item">
+                                <span>Cloud Computing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Infrastructure?</h2>
+                    <p>Discover how Ternic's RISC-V solutions can optimize your computing environment.</p>
+                    <a href="server.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ternic</h3>
+                    <p>Next-generation RISC-V computing solutions for enterprise environments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="server.html">Servers</a></li>
+                        <li><a href="modules.html">Server Modules</a></li>
+                        <li><a href="cpu-progress.html">CPU Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ternic.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ternic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
